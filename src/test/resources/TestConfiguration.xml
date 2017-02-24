@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailCheck" verbose="1">
+
+    <test name="TestConfig">
+        <parameter name="browser" value="chrome"></parameter>
+        <groups>
+            <run>
+                <!--<include name="Login Page Test"/>-->
+                <include name="Mail Page Test"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.factory_method.test.TestLogInPage"/>
+            <class name="com.epam.factory_method.test.TestNewMailPage"/>
+        </classes>
+
+    </test>
+
+</suite>
